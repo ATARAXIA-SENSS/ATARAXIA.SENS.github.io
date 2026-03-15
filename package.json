@@ -1,0 +1,26 @@
+{
+  "name": "ataraxia-sensorial",
+  "version": "1.0.0",
+  "description": "ATARAXIA SENSS - La alquimia de la experiencia",
+  "private": true,
+  "homepage": "https://marroquin97.github.io/ATARAXIA-SENSORIAL-/",
+  "scripts": {
+    "install": "cd frontend && yarn install",
+    "start": "cd frontend && yarn start",
+    "build": "cd frontend && yarn build",
+    "deploy": "cd frontend && yarn build && gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marroquin97/ATARAXIA-SENSORIAL-.git"
+  },
+  "keywords": [
+    "ATARAXIA SENSS",
+    "el loco sabio",
+    "mixología",
+    "Brian Marroquín",
+    "Michoacán"
+  ],
+  "author": "Brian Marroquín Ambriz",
+  "license": "MIT"
+}
