@@ -443,7 +443,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8 }}
           >
             <span className="font-mono text-xs tracking-[0.3em] text-gold uppercase">
-              Laboratorio Creativo-Técnico
+              Tech Lab
             </span>
           </motion.div>
 
@@ -454,27 +454,41 @@ const HeroSection = () => {
             className="font-syne text-5xl sm:text-6xl lg:text-8xl font-extrabold leading-[1.1] mt-6"
           >
             <span className="gradient-text">ATARAXIA SENSS</span>
+            <div className="font-outfit text-sm md:text-base text-gold/60 tracking-[0.25em] font-light mt-2">
+              el loco sabio
+            </div>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="font-outfit text-base md:text-lg text-[#A1A1AA] max-w-2xl mx-auto leading-relaxed mt-6"
+            className="font-syne text-2xl md:text-3xl text-gold mt-8 mb-4"
           >
-            <span className="text-[#EDEDED] font-medium">Tech Lab.</span> Laboratorio de Innovación Técnica y Experiencias Sensoriales.
+            La alquimia de la experiencia.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="font-outfit text-base md:text-lg text-[#A1A1AA] max-w-3xl mx-auto leading-relaxed"
+          >
+            Un espacio donde el arte, la percepción y la experimentación se encuentran.
             <br />
-            Diseñamos sistemas y experiencias que elevan el desempeño técnico y humano, 
-            integrando tecnología, creatividad y estrategia.
+            <span className="text-[#EDEDED]">Fundado por Brian Marroquín</span>, creador, bartender, artista y explorador de los sentidos.
           </motion.p>
           
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            className="mt-6"
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="mt-6 text-[#A1A1AA] max-w-2xl mx-auto"
           >
-            <span className="text-gold font-syne text-xl md:text-2xl tracking-wide">Precision. Experience. Evolution.</span>
+            <p className="font-outfit text-sm md:text-base">
+              Aquí cada creación nace de una idea simple:<br />
+              <span className="text-gold font-medium">la experiencia humana puede transformarse cuando prestamos atención a los detalles.</span>
+            </p>
           </motion.div>
 
           <motion.div
@@ -562,6 +576,342 @@ const HeroSection = () => {
     </section>
   );
 };
+
+
+// Manifiesto Section
+const ManifiestoSection = () => {
+  const manifiestoLines = [
+    "Creemos en la curiosidad como motor del conocimiento.",
+    "Creemos en el arte como una forma de entender el mundo.",
+    "Creemos que la experiencia directa enseña más que cualquier teoría.",
+    "",
+    "ATARAXIA nace del deseo de explorar, experimentar y crear sin miedo a romper lo establecido.",
+    "",
+    "Aquí la tradición se respeta, pero la creatividad la lleva un paso más adelante.",
+    "",
+    "Cada mezcla, cada obra y cada proyecto que surge en ATARAXIA es una invitación a observar con más atención, a percibir con más profundidad y a transformar lo cotidiano en algo significativo.",
+    "",
+    "No buscamos exceso. Buscamos equilibrio.",
+    "",
+    "Porque cuando el conocimiento, la experiencia y la creatividad se encuentran, aparece algo que los antiguos filósofos llamaban ataraxia:",
+    "",
+    "la calma que surge cuando comprendemos lo que hacemos."
+  ];
+
+  return (
+    <section className="py-24 relative overflow-hidden" data-testid="manifiesto-section">
+      {/* Background with alchemical symbol */}
+      <div className="absolute inset-0 opacity-5">
+        <img 
+          src="https://customer-assets.emergentagent.com/job_reverent-mirzakhani-3/artifacts/pbhaoued_1000033857.png"
+          alt="Alchemical symbols"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      <div className="max-w-4xl mx-auto px-6 lg:px-12 relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <span className="section-label">Nuestra Filosofía</span>
+          <h2 className="font-syne text-4xl md:text-5xl font-bold mt-4">
+            Manifiesto <span className="gradient-text">ATARAXIA</span>
+          </h2>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
+          className="space-y-6"
+        >
+          {manifiestoLines.map((line, index) => (
+            <motion.p
+              key={index}
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.05 }}
+              className={`font-outfit ${
+                line === "" 
+                  ? "h-4" 
+                  : line.includes("ataraxia:") || line.includes("la calma")
+                    ? "text-gold text-xl md:text-2xl font-medium text-center italic"
+                    : line.includes("ATARAXIA")
+                      ? "text-[#EDEDED] text-lg md:text-xl font-medium"
+                      : "text-[#A1A1AA] text-base md:text-lg"
+              } leading-relaxed`}
+            >
+              {line}
+            </motion.p>
+          ))}
+        </motion.div>
+
+        {/* Decorative element */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.8 }}
+          className="mt-16 flex justify-center"
+        >
+          <div className="w-16 h-16 border border-gold/30 rotate-45"></div>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+// El Loco Sabio - Mito Fundacional Section
+const LocoSabioSection = () => {
+  return (
+    <section className="py-24 bg-[#0A0A0A] relative overflow-hidden" data-testid="loco-sabio-section">
+      {/* Background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gold/5 to-transparent"></div>
+
+      <div className="max-w-6xl mx-auto px-6 lg:px-12 relative z-10">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Left - Image/Symbol */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="relative"
+          >
+            <img 
+              src="https://customer-assets.emergentagent.com/job_reverent-mirzakhani-3/artifacts/kh7slglv_1000033858.png"
+              alt="El Loco Sabio"
+              className="w-full max-w-md mx-auto"
+            />
+          </motion.div>
+
+          {/* Right - Content */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+          >
+            <span className="section-label">El Símbolo</span>
+            <h2 className="font-syne text-4xl md:text-5xl font-bold mt-4 mb-8">
+              <span className="gradient-text">El Loco Sabio</span>
+            </h2>
+
+            <div className="space-y-6 font-outfit text-[#A1A1AA] leading-relaxed">
+              <p className="text-lg">
+                El Loco Sabio representa al explorador que aprende directamente de la experiencia.
+              </p>
+              
+              <p>
+                No sigue caminos rígidos.<br />
+                Observa, experimenta, se equivoca, aprende y vuelve a intentar.
+              </p>
+
+              <div className="border-l-2 border-gold pl-6 my-8">
+                <p className="text-[#EDEDED] font-medium">
+                  Su locura no es desorden: <span className="text-gold">es curiosidad sin miedo.</span>
+                </p>
+                <p className="text-[#EDEDED] font-medium mt-4">
+                  Su sabiduría no es arrogancia: <span className="text-gold">es comprensión nacida de la práctica.</span>
+                </p>
+              </div>
+
+              <div className="bg-[#121212] p-6 rounded-lg border border-gold/20 mt-8">
+                <h3 className="font-syne text-xl text-gold mb-4">El Mito Fundacional</h3>
+                <p className="text-sm italic">
+                  Antes de las fórmulas, antes de las recetas, antes de las reglas… existía una pregunta:<br />
+                  <span className="text-[#EDEDED] font-medium">¿Qué significa realmente experimentar?</span>
+                </p>
+                <p className="text-sm mt-4">
+                  En un mundo lleno de ruido, algunos buscaban silencio.<br />
+                  En un mundo lleno de exceso, algunos buscaban esencia.<br />
+                  Entre ellos surgió una figura extraña. No era maestro. No era sacerdote. No era científico.<br />
+                  <span className="text-gold font-medium">Era simplemente el Loco Sabio.</span>
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+// Filosofía - Las 3 Fuerzas Section
+const FilosofiaSection = () => {
+  const fuerzas = [
+    {
+      title: "Experiencia Real",
+      description: "Aprender haciendo, experimentando y refinando cada detalle.",
+      icon: "🔥"
+    },
+    {
+      title: "Percepción Consciente",
+      description: "Los sentidos son herramientas para comprender el mundo.",
+      icon: "👁️"
+    },
+    {
+      title: "Creatividad Aplicada",
+      description: "El arte y la técnica se encuentran para crear algo nuevo.",
+      icon: "✨"
+    }
+  ];
+
+  return (
+    <section className="py-24 relative" data-testid="filosofia-section">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <span className="section-label">Las Tres Fuerzas</span>
+          <h2 className="font-syne text-4xl md:text-5xl font-bold mt-4">
+            Filosofía de <span className="gradient-text">ATARAXIA</span>
+          </h2>
+          <p className="font-outfit text-[#A1A1AA] text-lg mt-6 max-w-3xl mx-auto">
+            En ATARAXIA creemos que la creatividad y el conocimiento se desarrollan mejor cuando se practican.<br />
+            Por eso cada proyecto que nace aquí busca unir tres fuerzas:
+          </p>
+        </motion.div>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {fuerzas.map((fuerza, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.2 }}
+              className="relative group"
+            >
+              <div className="bg-[#0A0A0A] p-8 rounded-lg border border-gold/10 hover:border-gold/30 transition-all duration-300 h-full">
+                <div className="text-5xl mb-6 text-center">{fuerza.icon}</div>
+                <h3 className="font-syne text-2xl font-bold text-gold mb-4 text-center">
+                  {fuerza.title}
+                </h3>
+                <p className="font-outfit text-[#A1A1AA] text-center leading-relaxed">
+                  {fuerza.description}
+                </p>
+              </div>
+              
+              {/* Connecting line for desktop */}
+              {index < 2 && (
+                <div className="hidden md:block absolute top-1/2 -right-4 w-8 h-px bg-gold/30"></div>
+              )}
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Triangle symbol */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.6 }}
+          className="mt-16 flex justify-center"
+        >
+          <div className="relative w-32 h-32">
+            <div className="absolute inset-0 border-2 border-gold/30 rotate-0"
+                 style={{ clipPath: 'polygon(50% 0%, 0% 100%, 100% 100%)' }}>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+// Servicios Detallados Section
+const ServiciosSection = () => {
+  const servicios = [
+    {
+      title: "Mixología y Alquimia Sensorial",
+      description: "Creación de bebidas y experiencias que combinan técnica, creatividad y narrativa.",
+      icon: FlaskConical,
+      image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80"
+    },
+    {
+      title: "Formación y Talleres",
+      description: "Cursos diseñados para compartir habilidades reales en gastronomía, arte y oficios creativos.",
+      icon: GraduationCap,
+      image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&q=80"
+    },
+    {
+      title: "Arte y Diseño",
+      description: "Expresión visual y conceptual que conecta simbolismo, cultura y experimentación.",
+      icon: Award,
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
+    },
+    {
+      title: "Consultoría Creativa",
+      description: "Desarrollo de conceptos para bares, experiencias gastronómicas y proyectos culturales.",
+      icon: Briefcase,
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
+    }
+  ];
+
+  return (
+    <section className="py-24 bg-[#0A0A0A]" data-testid="servicios-section">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <span className="section-label">Experiencias</span>
+          <h2 className="font-syne text-4xl md:text-5xl font-bold mt-4">
+            ATARAXIA desarrolla <span className="gradient-text">proyectos</span> en diferentes áreas
+          </h2>
+        </motion.div>
+
+        <div className="grid md:grid-cols-2 gap-8">
+          {servicios.map((servicio, index) => {
+            const Icon = servicio.icon;
+            return (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="group"
+              >
+                <div className="bg-[#050505] rounded-lg overflow-hidden border border-gold/10 hover:border-gold/30 transition-all duration-300">
+                  <div className="relative h-64 overflow-hidden">
+                    <img 
+                      src={servicio.image}
+                      alt={servicio.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#050505] to-transparent"></div>
+                    <div className="absolute bottom-4 left-4">
+                      <Icon className="text-gold" size={32} />
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <h3 className="font-syne text-2xl font-bold text-[#EDEDED] mb-3">
+                      {servicio.title}
+                    </h3>
+                    <p className="font-outfit text-[#A1A1AA] leading-relaxed">
+                      {servicio.description}
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+};
+
 
 // Divisions Section
 const DivisionsSection = () => {
@@ -1136,6 +1486,24 @@ const AboutSection = () => {
               </div>
             </div>
             
+            {/* Misión y Visión */}
+            <div className="grid md:grid-cols-2 gap-6 mt-8">
+              <div className="bg-[#0A0A0A] p-6 rounded-lg border border-gold/10">
+                <h4 className="font-syne text-xl font-bold text-gold mb-3">Misión</h4>
+                <p className="font-outfit text-sm text-[#A1A1AA] leading-relaxed">
+                  Crear experiencias, proyectos y conocimiento que inspiren curiosidad, creatividad y crecimiento personal 
+                  a través del arte, la mixología, la formación y la exploración sensorial.
+                </p>
+              </div>
+              <div className="bg-[#0A0A0A] p-6 rounded-lg border border-gold/10">
+                <h4 className="font-syne text-xl font-bold text-gold mb-3">Visión</h4>
+                <p className="font-outfit text-sm text-[#A1A1AA] leading-relaxed">
+                  Convertir ATARAXIA en una plataforma creativa reconocida por unir arte, conocimiento y experiencia práctica, 
+                  generando espacios donde las personas puedan aprender, crear y descubrir nuevas formas de percibir el mundo.
+                </p>
+              </div>
+            </div>
+            
             {/* Tonatzin Group Photo */}
             <div className="relative rounded-xl overflow-hidden mt-6">
               <img
@@ -1157,6 +1525,99 @@ const AboutSection = () => {
 };
 
 // Contact Section
+
+// Mensaje Final - Powerful Closing Section
+const MensajeFinalSection = () => {
+  return (
+    <section className="py-32 relative overflow-hidden" data-testid="mensaje-final-section">
+      {/* Background with subtle pattern */}
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gold/5 to-transparent"></div>
+        <img 
+          src="https://customer-assets.emergentagent.com/job_reverent-mirzakhani-3/artifacts/pbhaoued_1000033857.png"
+          alt="Pattern"
+          className="absolute inset-0 w-full h-full object-cover opacity-3"
+        />
+      </div>
+
+      <div className="max-w-4xl mx-auto px-6 lg:px-12 relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center space-y-8"
+        >
+          <div className="inline-block">
+            <div className="w-16 h-16 border-2 border-gold rotate-45 mx-auto mb-8 opacity-50"></div>
+          </div>
+
+          <p className="font-outfit text-xl md:text-2xl text-[#A1A1AA] leading-relaxed">
+            ATARAXIA no busca impresionar con promesas grandiosas.
+          </p>
+
+          <p className="font-outfit text-xl md:text-2xl text-[#EDEDED] leading-relaxed">
+            Busca algo más sencillo y más profundo:
+          </p>
+
+          <p className="font-syne text-3xl md:text-4xl text-gold font-bold leading-relaxed">
+            crear experiencias auténticas que dejen huella.
+          </p>
+
+          <div className="py-8">
+            <div className="h-px w-32 bg-gradient-to-r from-transparent via-gold to-transparent mx-auto"></div>
+          </div>
+
+          <div className="space-y-4">
+            <p className="font-outfit text-lg md:text-xl text-[#A1A1AA]">
+              Porque cuando la curiosidad se convierte en práctica<br />
+              y la práctica en conocimiento,
+            </p>
+
+            <p className="font-outfit text-lg md:text-xl text-[#EDEDED]">
+              aparece el estado que los antiguos llamaban:
+            </p>
+
+            <div className="pt-6">
+              <motion.h3
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.5, duration: 0.8 }}
+                className="font-syne text-5xl md:text-6xl font-extrabold gradient-text"
+              >
+                ATARAXIA
+              </motion.h3>
+              <p className="font-outfit text-sm text-gold/60 tracking-[0.3em] mt-2">
+                el loco sabio
+              </p>
+            </div>
+
+            <p className="font-outfit text-base md:text-lg text-gold italic pt-4">
+              la calma que surge cuando comprendemos lo que hacemos
+            </p>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.8 }}
+            className="pt-12"
+          >
+            <Button 
+              onClick={() => document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' })}
+              className="btn-gold px-12 py-6 text-lg font-outfit font-medium"
+            >
+              Iniciemos Tu Proyecto
+            </Button>
+          </motion.div>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+
 const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -1563,11 +2024,16 @@ const Home = () => {
     <div className="min-h-screen bg-[#050505]">
       <Navigation />
       <HeroSection />
+      <ManifiestoSection />
+      <LocoSabioSection />
+      <FilosofiaSection />
       <DivisionsSection />
+      <ServiciosSection />
       <CocktailGallery />
       <StatsSection />
       <PortfolioSection />
       <AboutSection />
+      <MensajeFinalSection />
       <ContactSection />
       <Footer />
       <WhatsAppButton />
