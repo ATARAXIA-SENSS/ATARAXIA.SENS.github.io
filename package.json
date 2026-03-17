@@ -1,7 +1,7 @@
 {
-  "name": "ataraxia-sensorial",
+  "name": "ataraxia-vero",
   "version": "1.0.0",
-  "description": "ATARAXIA SENSS - La alquimia de la experiencia",
+  "description": "ATARAXIA Vero - La alquimia de la experiencia",
   "private": true,
   "homepage": "https://marroquin97.github.io/ATARAXIA-SENSORIAL-/",
   "scripts": {
@@ -15,7 +15,7 @@
     "url": "git+https://github.com/Marroquin97/ATARAXIA-SENSORIAL-.git"
   },
   "keywords": [
-    "ATARAXIA SENSS",
+    "ATARAXIA Vero",
     "el loco sabio",
     "mixología",
     "Brian Marroquín",

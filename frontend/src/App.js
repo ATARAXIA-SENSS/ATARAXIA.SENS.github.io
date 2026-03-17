@@ -263,7 +263,7 @@ const Navigation = () => {
         <a href="#inicio" className="flex items-center gap-3" data-testid="logo-link">
           <AnimatedLogo size="sm" showText={false} />
           <div className="hidden sm:flex flex-col">
-            <span className="font-syne text-xl font-bold tracking-tight">ATARAXIA SENSS</span>
+            <span className="font-syne text-xl font-bold tracking-tight">ATARAXIA Vero</span>
             <span className="font-outfit text-[10px] text-gold/60 tracking-widest -mt-1">el loco sabio</span>
           </div>
         </a>
@@ -453,7 +453,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="font-syne text-5xl sm:text-6xl lg:text-8xl font-extrabold leading-[1.1] mt-6"
           >
-            <span className="gradient-text">ATARAXIA SENSS</span>
+            <span className="gradient-text">ATARAXIA Vero</span>
             <div className="font-outfit text-sm md:text-base text-gold/60 tracking-[0.25em] font-light mt-2">
               el loco sabio
             </div>
@@ -918,7 +918,7 @@ const DivisionsSection = () => {
   const divisions = [
     {
       id: "systems",
-      name: "ATARAXIA SENSS SYSTEMS",
+      name: "ATARAXIA Vero SYSTEMS",
       tagline: "Precision. Structure. Results.",
       description: "Soluciones técnicas y digitales con enfoque en eficiencia y resultados medibles.",
       services: ["Soporte IT y reparación", "Diseño gráfico y montaje", "Optimización de procesos", "Branding y desarrollo conceptual"],
@@ -927,7 +927,7 @@ const DivisionsSection = () => {
     },
     {
       id: "experience",
-      name: "ATARAXIA SENSS EXPERIENCE",
+      name: "ATARAXIA Vero EXPERIENCE",
       tagline: "Sensation. Emotion. Memory.",
       description: "Experiencias sensoriales que generan impacto emocional y rentabilidad.",
       services: ["Mixología conceptual", "Diseño de conceptos gastronómicos", "Activaciones sensoriales", "Desarrollo de marcas para bares"],
@@ -936,7 +936,7 @@ const DivisionsSection = () => {
     },
     {
       id: "academy",
-      name: "ATARAXIA SENSS ACADEMY",
+      name: "ATARAXIA Vero ACADEMY",
       tagline: "Knowledge. Growth. Mastery.",
       description: "Transferencia real de conocimiento para el desarrollo profesional.",
       services: ["Cursos técnicos", "Formación en mixología", "Capacitación profesional", "Mentorías estratégicas"],
@@ -1451,7 +1451,7 @@ const AboutSection = () => {
             </div>
 
             <p className="font-outfit text-lg text-[#A1A1AA] leading-relaxed">
-              <span className="text-gold font-semibold">ATARAXIA SENSS TECH LAB</span> nace de la visión del 
+              <span className="text-gold font-semibold">ATARAXIA Vero TECH LAB</span> nace de la visión del 
               <span className="text-[#EDEDED]"> Loco Sabio</span>: aquel que parece disperso, pero en realidad 
               integra mundos. No somos "los que hacen de todo". Somos arquitectos de soluciones técnicas 
               y experiencias transformadoras.
@@ -1737,7 +1737,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="font-outfit text-sm text-[#52525B]">Facebook Cursos</p>
-                  <p className="font-outfit text-[#EDEDED] group-hover:text-gold transition-colors">ATARAXIA SENSS Academy</p>
+                  <p className="font-outfit text-[#EDEDED] group-hover:text-gold transition-colors">ATARAXIA Vero Academy</p>
                 </div>
               </a>
 
@@ -1841,9 +1841,9 @@ const ContactSection = () => {
                       <SelectValue placeholder="Selecciona un servicio" />
                     </SelectTrigger>
                     <SelectContent className="bg-[#121212] border-[rgba(255,255,255,0.08)]">
-                      <SelectItem value="systems">ATARAXIA SENSS SYSTEMS</SelectItem>
-                      <SelectItem value="experience">ATARAXIA SENSS EXPERIENCE</SelectItem>
-                      <SelectItem value="academy">ATARAXIA SENSS ACADEMY</SelectItem>
+                      <SelectItem value="systems">ATARAXIA Vero SYSTEMS</SelectItem>
+                      <SelectItem value="experience">ATARAXIA Vero EXPERIENCE</SelectItem>
+                      <SelectItem value="academy">ATARAXIA Vero ACADEMY</SelectItem>
                       <SelectItem value="consulting">Consultoría General</SelectItem>
                     </SelectContent>
                   </Select>
@@ -1898,7 +1898,7 @@ const Footer = () => {
             <div className="flex items-center gap-3 mb-4">
               <AnimatedLogo size="sm" showText={false} />
               <div className="flex flex-col">
-                <span className="font-syne text-xl font-bold">ATARAXIA SENSS</span>
+                <span className="font-syne text-xl font-bold">ATARAXIA Vero</span>
                 <span className="font-outfit text-[10px] text-gold/60 tracking-widest -mt-1">el loco sabio</span>
               </div>
             </div>
@@ -1939,9 +1939,9 @@ const Footer = () => {
           <div>
             <h4 className="font-syne font-bold text-[#EDEDED] mb-4">Divisiones</h4>
             <ul className="space-y-2">
-              <li><a href="#divisiones" className="footer-link font-outfit text-sm">ATARAXIA SENSS SYSTEMS</a></li>
-              <li><a href="#divisiones" className="footer-link font-outfit text-sm">ATARAXIA SENSS EXPERIENCE</a></li>
-              <li><a href="#divisiones" className="footer-link font-outfit text-sm">ATARAXIA SENSS ACADEMY</a></li>
+              <li><a href="#divisiones" className="footer-link font-outfit text-sm">ATARAXIA Vero SYSTEMS</a></li>
+              <li><a href="#divisiones" className="footer-link font-outfit text-sm">ATARAXIA Vero EXPERIENCE</a></li>
+              <li><a href="#divisiones" className="footer-link font-outfit text-sm">ATARAXIA Vero ACADEMY</a></li>
             </ul>
           </div>
 
@@ -1989,7 +1989,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-[rgba(255,255,255,0.08)] flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="font-mono text-xs text-[#52525B]">
-            © {new Date().getFullYear()} ATARAXIA SENSS TECH LAB. Todos los derechos reservados.
+            © {new Date().getFullYear()} ATARAXIA Vero TECH LAB. Todos los derechos reservados.
           </p>
           <p className="font-mono text-xs text-[#52525B]">
             Tacámbaro y Morelia, Michoacán

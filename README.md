@@ -1,14 +1,14 @@
-# ATARAXIA SENSS - El Loco Sabio
+# ATARAXIA Vero - El Loco Sabio
 
 ## 🌐 Sitio Web Oficial
 
-Visita: **[ataraxia-senss.com](https://marroquin97.github.io/ATARAXIA-SENSORIAL-/)**
+Visita: **[ataraxia-vero.com](https://marroquin97.github.io/ATARAXIA-SENSORIAL-/)**
 
 ---
 
 ## 🔥 La Alquimia de la Experiencia
 
-ATARAXIA SENSS Tech Lab - Laboratorio de innovación técnica y experiencias sensoriales.
+ATARAXIA Vero Tech Lab - Laboratorio de innovación técnica y experiencias sensoriales.
 
 **Fundado por:** Brian Marroquín Ambriz
 
@@ -16,9 +16,9 @@ ATARAXIA SENSS Tech Lab - Laboratorio de innovación técnica y experiencias sen
 
 ### 🎯 Nuestras Divisiones
 
-- **ATARAXIA SENSS SYSTEMS** - Precision. Structure. Results.
-- **ATARAXIA SENSS EXPERIENCE** - Sensation. Emotion. Memory.
-- **ATARAXIA SENSS ACADEMY** - Knowledge. Growth. Mastery.
+- **ATARAXIA Vero SYSTEMS** - Precision. Structure. Results.
+- **ATARAXIA Vero EXPERIENCE** - Sensation. Emotion. Memory.
+- **ATARAXIA Vero ACADEMY** - Knowledge. Growth. Mastery.
 
 ---
 
@@ -33,4 +33,4 @@ Tacámbaro y Morelia, Michoacán, México
 
 ---
 
-**© 2024 ATARAXIA SENSS. Todos los derechos reservados.**
+**© 2024 ATARAXIA Vero. Todos los derechos reservados.**
